@@ -1,1 +1,289 @@
-<!--Your HTML code here-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Lodgings | New Orleans</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+	<script>
+
+  function toggleTable1()
+    {
+    var lTable = document.getElementById("Table1");
+    lTable.style.display = (lTable.style.display == "table") ? "none" : "table";
+	  document.getElementById("Table2").style.display="none";
+	  document.getElementById("Table3").style.display="none";
+	  document.getElementById("Table4").style.display="none";
+   }
+   
+   function toggleTable2()
+    {
+    var lTable = document.getElementById("Table2");
+    lTable.style.display = (lTable.style.display == "table") ? "none" : "table";
+		  document.getElementById("Table1").style.display="none";
+	  document.getElementById("Table3").style.display="none";
+	  document.getElementById("Table4").style.display="none";
+   }
+   
+   function toggleTable3()
+    {
+    var lTable = document.getElementById("Table3");
+    lTable.style.display = (lTable.style.display == "table") ? "none" : "table";
+		  document.getElementById("Table2").style.display="none";
+	  document.getElementById("Table1").style.display="none";
+	  document.getElementById("Table4").style.display="none";
+   }
+   
+   function toggleTable4()
+    {
+    var lTable = document.getElementById("Table4");
+    lTable.style.display = (lTable.style.display == "table") ? "none" : "table";
+		  document.getElementById("Table2").style.display="none";
+	  document.getElementById("Table3").style.display="none";
+	  document.getElementById("Table1").style.display="none";
+   }
+
+</script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="main-header">
+        <div class="container">
+            <div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <h1><span class="primary-text">Lodgings </span>| New Orleans </h1>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                    <nav id="navbar">
+                        <ul>
+                            <li class="current"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                          
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SHOWCASE -->
+    <section id="showcase">
+        <div class="container">
+            <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+			
+                <div  class="col-xs-10 col-sm-10 col-md-10 col-lg-7 showcase-content">
+                    <h1><span class="primary-text">City of New Orleans</span></h1>
+                    <p>New Orleans is the epitome of Scandi cool.Come and explore the Restaurants and Lodgings!!</p>
+                </div>
+				
+            </div>
+			 <div class="row center-xs center-sm center-md center-lg">
+			 <div  class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
+                            
+                            <h4>Hotels & Motels</h4>
+                            <button class="button" onclick="toggleTable1()">Check Listing</button>
+                        </div>
+			          <div  class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                         
+                            <h4>Casinos</h4>
+                        <button class="button" onclick="toggleTable2()">Check Listing</button>
+                        </div>
+                        
+                        <div  class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                           
+                            <h4>Rooming</h4>
+                           <button class="button" onclick="toggleTable3()">Check Listing</button>
+                        </div>
+						<div  class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                          
+                            <h4>B&B and Hostels</h4>
+							<button class="button" onclick="toggleTable4()">Check Listing</button>
+                           
+                        </div>
+						
+                    </div>
+					
+					
+        </div>
+		 <section>
+	   <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+	<table id="Table1" class="content-table" style="display:none">
+  <thead>
+    <tr>
+      <th>Hotel Name</th>
+      <th>Address</th>
+	  <th>ZipCode</th>
+      <th>Suites Availability </th>
+      <th>Owners Name</th>
+	 </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>111 IBERVILLE</td>
+      <td>111 IBERVILLE ST</td>
+      <td>70130</td>
+      <td>YES</td>
+	    <td>IBERVILLE  HOTEL MANAGER LLC</td>
+    </tr>
+    <tr>
+      <td>BOURGOYNE GUEST HOUSE</td>
+      <td>1415 PRYTANIA ST</td>
+      <td>70116</td>
+      <td>NO</td>
+	    <td>STANLEY TYBURSKI</td>
+    </tr>
+    <tr>
+      <td> RTNIOLLE</td>
+      <td>143 DIRMKR ST</td>
+      <td>70130</td>
+      <td>NO</td>
+	    <td>RTNIOLLE  HOTEL MANAGER LLC</td>
+    </tr>
+	<tr>
+      <td>BYWATER BED & BREAKFAST</td>
+      <td>1341 IBERVILLE ST</td>
+      <td>70130</td>
+      <td>NO</td>
+	    <td>BYWATER BED & BREAKFAST MANAGER LLC</td>
+    </tr>
+  </tbody>
+</table> 
+
+<table id="Table2" class="content-table" style="display:none">
+  <thead>
+     <th>Casinos</th>
+      <th>Address</th>
+	  <th>ZipCode</th>
+      <th>Suites Availability </th>
+      <th>Owners Name</th>
+	 </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CREOLE HOUSE</td>
+      <td>111 TSQURE</td>
+      <td>70123</td>
+      <td>NO</td>
+	    <td>CSYLVIA PATTERSON & JASON PATTERSON</td>
+    </tr>
+    <tr >
+      <td>FRENCHMEN OASIS</td>
+      <td>Sally ST</td>
+      <td>72400</td>
+      <td>NO</td>
+	   <td>STAY ALFRED,INC </td>
+    </tr>
+    <tr>
+      <td>H H WHITNEY HOUSE</td>
+      <td>Nick 121 ST</td>
+      <td>72300</td>
+      <td>NO</td>
+	   <td>OMNI NEW ORLEANS CORP </td>
+    </tr>
+	<tr>
+      <td>HOTEL MAZARIN</td>
+      <td>STAKODC 121 Nick</td>
+      <td>72300</td>
+      <td>NO</td>
+	   <td>CYNTHIA L QUICK LLC</td>
+    </tr>
+  </tbody>
+</table> 
+
+<table id="Table3" class="content-table" style="display:none">
+  <thead>
+   <th>Rooming</th>
+      <th>Address</th>
+	  <th>ZipCode</th>
+      <th>Suites Availability </th>
+      <th>Owners Name</th>
+	 </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>THE MAGEE MANOR</td>
+      <td>330 MAGAZINE ST</td>
+      <td>72110</td>
+      <td>NO</td>
+	    <td>THE MAGEE MANOR </td>
+    </tr>
+    <tr >
+      <td>THE SAINT HOTEL BARS</td>
+      <td>3626 DELGADO DR</td>
+      <td>72400</td>
+      <td>NO</td>
+	   <td>THE SAINT HOTEL LLC</td>
+    </tr>
+    <tr>
+      <td>WELCOME ABROAD LLC BARS</td>
+      <td>931 CANAL ST</td>
+      <td>71300</td>
+      <td>NO</td>
+	   <td>JUANITA L JACKSON</td>
+    </tr>
+	 <tr>
+      <td>ZORA-A NEW ORLENS B & B</td>
+      <td>10100 I 10 SERVICE RD</td>
+      <td>71300</td>
+      <td>NO</td>
+	   <td>G6 HOSPITALITY PROPERTY LLC </td>
+    </tr>
+  </tbody>
+</table> 
+<table id="Table4" class="content-table" style="display:none">
+  <thead>
+    <th>B&B and Hostels</th>
+      <th>Address</th>
+	  <th>ZipCode</th>
+      <th>Suites Availability </th>
+      <th>Owners Name</th>
+	 </tr>
+  </thead>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LA GALERIE</td>
+      <td>12330 INTERSTATE 10 SERVICE RD</td>
+      <td>88110</td>
+      <td>NO</td>
+	    <td>LA GALERIE</td>
+    </tr>
+    <tr >
+      <td>LA RUE ESPLANADE</td>
+      <td>5035 CHEF MENTEUR HWY</td>
+      <td>72400</td>
+      <td>YES</td>
+	   <td>LA RUE ESPLANADE LLC</td>
+    </tr>
+    <tr>
+      <td>MARIE LAVAEAU GUEST HOUSE</td>
+      <td>7004 ST CHARLES AVE</td>
+      <td>52,300</td>
+      <td>YES</td>
+	   <td>MARIE LAVAEAU GUEST HOUSE</td>
+    </tr>
+	    <tr>
+      <td>MOTEL 6 NEW ORLEANS</td>
+      <td>625 MARIGNY ST</td>
+      <td>72300</td>
+      <td>NO</td>
+	   <td>MOTEL 6 NEW ORLEANS LLC</td>
+    </tr>
+  </tbody>
+</table> 
+</div>
+ </section>
+    </section>
+	
+	
+  
+
+    
+
+   
+
+
+
+</body>
+</html>
