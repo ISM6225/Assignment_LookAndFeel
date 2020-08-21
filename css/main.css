@@ -1,47 +1,125 @@
-/**
-Sample css code
-*/
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+
 body,
 html {
   height: 100%;
+  margin: 0;
+  font-family: 'Abel';
 }
 
-/*Set background image*/
-.container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
-  font-size: 25px;
-}
-
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
-}
-
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
-}
-
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
-}
-
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #a8a8a8;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding-top: 48px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  overflow-y: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.container {
+  padding: 2px 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card-title a {
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+  margin: 5px 0;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.card-img {
+  border-radius: 5px 5px 0 0;
+}
+
+footer {
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+.copyright {
+  font-size: smaller;
+}
+
+
+/* TABLET GRIDS */
+@media only screen and (min-width: 600px) {
+  .content {
+    margin: 0 2em;
+  }
+  .topnav .icon {
+    display: flex;
+    float: right;
+    padding: 10px;
+  }
+}
+
+/* PHONE LANDSCAPE */
+@media only screen and (orientation: landscape) and (min-width: 600px) {
+  .content {
+    margin: 0 4em;
+  }
+}
+
+/* DESKTOP GRIDS */
+@media only screen and (min-width: 768px) {
+  .content {
+    margin: 0 5em;
+  }
+  .card {
+    height: 30vw;
+  }
 }
