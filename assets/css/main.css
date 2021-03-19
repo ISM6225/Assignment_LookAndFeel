@@ -1,11 +1,11 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
 
 /*
 	Theory by TEMPLATED
 	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	Released for free under the Creative Commons Attribution 3.0  (templated.co/license)
 */
 
 /* Reset */
@@ -1773,11 +1773,16 @@
 
 		}
 
+
 /* Section/Article */
+
+
 
 	section.special, article.special {
 		text-align: center;
 	}
+
+
 
 		section.special article, article.special article {
 			text-align: left;
