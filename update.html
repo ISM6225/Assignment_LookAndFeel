@@ -19,9 +19,9 @@
 					<a href="index.html" class="logo">Theory</a>
 					<nav id="nav">
 						<a href="index.html">Home</a>
-						<a href="generic.html">Generic</a>
-						<a href="register.html">Register</a>
-						<a href="search.html">Search</a>
+						<a href="searchUniv.html">Search Univ</a>
+						<a href="programDetails.html">Program Details</a>
+						<a href="update.html">Update</a>
 						<a href="aboutUs.html">About Us</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -32,8 +32,8 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h2>Register</h2>
-						<p>Aliquam erat volutpat nam dui </p>
+						<h2>Update</h2>
+						<p>Update the Academic Programs for an Instition </p>
 					</header>
 
 					<!-- Content -->
@@ -65,67 +65,84 @@
 
 					<hr class="major" />
 					<!-- Form -->
-					<h3>Form</h3>
+					<!--<h3>Form</h3>-->
 
 					<form method="post" action="#">
 						<div class="row uniform table-wrapper">
-							<div class="6u 12u$(xsmall)">
+							<!--<div class="6u 12u$(xsmall)">
 								<input type="text" name="name" id="name" value="" placeholder="Name" />
 							</div>
 							<div class="6u$ 12u$(xsmall)">
 								<input type="email" name="email" id="email" value="" placeholder="Email" />
-							</div>
+							</div>-->
 							<!-- Break -->
-							<div class="12u$">
-								<div class="select-wrapper">
-									<select name="category" id="category">
-										<option value="">- Category -</option>
-										<option value="1">Manufacturing</option>
-										<option value="1">Shipping</option>
-										<option value="1">Administration</option>
-										<option value="1">Human Resources</option>
-									</select>
+							<!--<div class="12u$">-->
+							<div class="6u 12u$(xsmall)">
+									<div class="select-wrapper">
+										<label for="Institution">Institution (Read-Only)</label>
+										<select name="INSTITUITION NAME" id="INSTITUITION">
+											<option value="">- Institution -</option>
+											<option value="1">The University of Tampa</option>
+											<option value="2">Brewster Technical College</option>
+											<option value="3">Hillsborough Community College</option>
+											<option value="4">Concorde Career Institute-Tampa</option>
+											<option value="5">The University of Tampa</option>
+											<option value="6">Brewster Technical College</option>
+											<option value="7">Hillsborough Community College</option>
+											<option value="8">Concorde Career Institute-Tampa</option>
+											<option value="9">Paul Mitchell the School-Tampa</option>
+											<option value="10">The University of Tampa</option>
+											<option value="11">Brewster Technical College</option>
+											<option value="12">Hillsborough Community College</option>
+											<option value="13">Concorde Career Institute-Tampa</option>
+											<option value="14">The University of Tampa</option>
+											<option value="15">Brewster Technical College</option>
+											<option value="16">Hillsborough Community College</option>
+											<option value="17">Concorde Career Institute-Tampa</option>
+										</select>
+									</div>
+								</div>
+								<!-- Break -->
+								<!--<div class="4u 12u$(small)">-->
+								<div class="6u$ 12u$(xsmall)">
+									<label for="Programs">Programs</label>
+									<input type="text" name="Programs" id="Program" value="" placeholder="Program" />
+								</div>
+								<!--<div class="4u 12u$(small)">
+		<input type="radio" id="priority-normal" name="priority">
+		<label for="priority-normal">Normal Priority</label>
+	</div>
+	<div class="4u$ 12u$(small)">
+		<input type="radio" id="priority-high" name="priority">
+		<label for="priority-high">High Priority</label>
+	</div>-->
+								<!-- Break -->
+								<!--<div class="6u 12u$(small)">
+		<input type="checkbox" id="copy" name="copy">
+		<label for="copy">Email me a copy of this message</label>
+	</div>
+	<div class="6u$ 12u$(small)">
+		<input type="checkbox" id="human" name="human" checked>
+		<label for="human">I am a human and not a robot</label>
+	</div>-->
+								<!-- Break -->
+								<div class="12u$">
+									<label for="Comments">Comments</label>
+									<textarea name="comments" id="comments" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<!-- Break -->
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="submit" value="Update Institute" /></li>
+										<li><input type="reset" value="Reset" class="alt" /></li>
+									</ul>
 								</div>
 							</div>
-							<!-- Break -->
-							<div class="4u 12u$(small)">
-								<input type="radio" id="priority-low" name="priority" checked>
-								<label for="priority-low">Low Priority</label>
-							</div>
-							<div class="4u 12u$(small)">
-								<input type="radio" id="priority-normal" name="priority">
-								<label for="priority-normal">Normal Priority</label>
-							</div>
-							<div class="4u$ 12u$(small)">
-								<input type="radio" id="priority-high" name="priority">
-								<label for="priority-high">High Priority</label>
-							</div>
-							<!-- Break -->
-							<div class="6u 12u$(small)">
-								<input type="checkbox" id="copy" name="copy">
-								<label for="copy">Email me a copy of this message</label>
-							</div>
-							<div class="6u$ 12u$(small)">
-								<input type="checkbox" id="human" name="human" checked>
-								<label for="human">I am a human and not a robot</label>
-							</div>
-							<!-- Break -->
-							<div class="12u$">
-								<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-							</div>
-							<!-- Break -->
-							<div class="12u$">
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-									<li><input type="reset" value="Reset" class="alt" /></li>
-								</ul>
-							</div>
-						</div>
 					</form>
 
 					<hr />
 
-					<form method="post" action="#">
+				<!--	<form method="post" action="#">
 						<div class="row uniform">
 							<div class="9u 12u$(small)">
 								<input type="text" name="query" id="query" value="" placeholder="Query" />
@@ -134,7 +151,7 @@
 								<input type="submit" value="Search" class="fit" />
 							</div>
 						</div>
-					</form>
+					</form>-->
 					<!-- Elements -->
 					<!--<h2 id="elements">Elements</h2>
 	<div class="row 200%">
@@ -268,11 +285,11 @@
 		</div>
 	</div>-->
 					<!-- Blockquote -->
-					<h3>Blockquote</h3>
-					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
+					<!--<h3>Blockquote</h3>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>-->
 
 					<!-- Table -->
-					<h3>Table</h3>
+					<!--<h3>Table</h3>
 
 					<h4>Default</h4>
 					<div class="table-wrapper">
@@ -366,7 +383,7 @@
 						</table>
 					</div>
 
-				</div>
+				</div>-->
 						<!--<div class="6u$ 12u$(medium)">-->
 
 							<!-- Buttons -->
