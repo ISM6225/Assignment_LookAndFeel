@@ -1,0 +1,149 @@
+C:\Users\saran\source\repos\Assignment_LookAndFeel>git log --author="aishwaryaa@usf.edu" --pretty=tformat: --numstat
+-       -       .vs/slnx.sqlite
+5       5       aboutUs.html
+-       -       img/ERD.png
+-       -       img/ERDimage.png
+8       0       .vs/Assignment_LookAndFeel/config/applicationhost.config
+-       -       .vs/Assignment_LookAndFeel/v16/.suo
+-       -       .vs/slnx.sqlite
+56      88      index.html
+1025    0       .vs/Assignment_LookAndFeel1/config/applicationhost.config
+-       -       .vs/slnx.sqlite
+1       1       aboutUs.html
+2       2       aboutUs.html
+
+C:\Users\saran\source\repos\Assignment_LookAndFeel>git log --author="saranyarajagopalan@usf.edu" --pretty=tformat: --numstat
+33      31      aboutUs.html
+0       10      aboutUs.html
+0       9       update.html
+-       -       .vs/Assignment_LookAndFeel/v16/.suo
+-       -       .vs/slnx.sqlite
+1       6       Delete.html
+0       483     Register (3).html
+0       72      _backup.html
+3       3       aboutUs.html
+2       31      createnew.html
+0       49      css/main01.css
+1       8       index.html
+0       172     index_backup.html
+2       494     programDetails.html
+0       33      sample.html
+2       37      searchUniv.html
+6       467     update.html
+-       -       .vs/Assignment_LookAndFeel/v16/.suo
+-       -       .vs/slnx.sqlite
+3       3       aboutUs.html
+0       94      generic.html
+48      48      index.html
+591     0       programDetails.html
+32      32      search.html => searchUniv.html
+74      57      register.html => update.html
+353     286     register.html
+-       -       .vs/slnx.sqlite
+1       1       elements.html => Register (3).html
+4       3       aboutUs.html
+3       1       generic.html
+2       1       index.html
+485     0       register.html
+485     0       search.html
+963     0       .vs/Assignment_LookAndFeel/config/applicationhost.config
+-       -       .vs/Assignment_LookAndFeel/v16/.suo
+6       0       .vs/VSWorkspaceState.json
+-       -       .vs/slnx.sqlite
+-       -       .vs/slnx.sqlite~parent of d1c1a80 (modified banner)
+10      0       .vs/tasks.vs.json
+62      0       LICENSE.txt
+72      0       _backup.html
+47      0       css/main01.css
+483     0       elements.html
+92      0       generic.html
+-       -       img/Aishwaryaa2.jpg
+172     0       index_backup.html
+2       2       aboutUs.html
+171     0       aboutUs.html
+4       0       assets/css/font-awesome.min.css
+3078    0       assets/css/main.css
+-       -       assets/fonts/FontAwesome.otf
+-       -       assets/fonts/fontawesome-webfont.eot
+685     0       assets/fonts/fontawesome-webfont.svg
+-       -       assets/fonts/fontawesome-webfont.ttf
+-       -       assets/fonts/fontawesome-webfont.woff
+-       -       assets/fonts/fontawesome-webfont.woff2
+5       0       assets/js/jquery.min.js
+66      0       assets/js/main.js
+2       0       assets/js/skel.min.js
+587     0       assets/js/util.js
+-       -       img/aishwaryaa.jpg
+-       -       img/banner.jpg
+-       -       img/banner01.jpg
+-       -       img/banner02.jpg
+-       -       img/banner03.jpg
+-       -       img/bull.jpg
+-       -       Saranya_2021.jpg => img/saranya.jpg
+97      1       index.html
+-       -       Saranya_2021.jpg
+
+
+C:\Users\saran\source\repos\Assignment_LookAndFeel>git log --author="ngopu@usf.edu" --pretty=tformat: --numstat
+-       -       .vs/slnx.sqlite
+8       4       aboutUs.html
+-       -       img/datavisualization.png
+20      15      index.html
+-       -       .vs/Assignment_LookAndFeel4/v16/.suo
+1       0       .vs/VSWorkspaceState.json
+-       -       .vs/slnx.sqlite
+59      124     Delete.html
+9       4       createnew.html
+13      20      programDetails.html
+-       -       .vs/Assignment_LookAndFeel4/v16/.suo
+-       -       .vs/slnx.sqlite
+139     0       Delete.html
+3       3       aboutUs.html
+114     0       createnew.html
+3       3       index.html
+315     330     programDetails.html
+7       7       searchUniv.html
+506     518     update.html
+-       -       .vs/Assignment_LookAndFeel4/v16/.suo
+-       -       .vs/slnx.sqlite
+39      38      aboutUs.html
+64      10      assets/css/main.css
+6       0       css/main.css
+2       0       css/main01.css
+-       -       img/AM11.jpeg
+-       -       img/Aishwaryaa2.jpg
+-       -       img/Collegescorecard.png
+-       -       img/ERDimage.png
+-       -       img/Nynali.jpg
+-       -       img/Nynali2.jpg
+-       -       img/aishwaryaa.jpg
+-       -       img/aishwaryaa2 - Copy.jpg
+-       -       img/aishwaryaa2.jpg
+-       -       img/aishwaryaa3.jpg
+-       -       img/aishwaryaa4.jpg
+-       -       img/banner.jpg
+-       -       img/banner01.jpg
+-       -       img/banner02.jpg
+-       -       img/banner03.jpg
+-       -       img/bull.jpg
+-       -       img/homeimage.JPG
+-       -       img/imagenew.jpg
+-       -       img/search.jpg
+20      51      index.html
+90      456     search.html
+1023    0       .vs/Assignment_LookAndFeel4/config/applicationhost.config
+-       -       .vs/Assignment_LookAndFeel4/v16/.suo
+-       -       .vs/slnx.sqlite
+98      132     aboutUs.html
+7       2       assets/css/main.css
+1       1       css/main.css
+-       -       img/Nynali.jpg
+-       -       img/aishwaryaa.jpg
+-       -       img/aishwaryaa2 - Copy.jpg
+-       -       img/aishwaryaa2.jpg
+-       -       img/aishwaryaa3.jpg
+-       -       img/aishwaryaa4.jpg
+1       1       aboutUs.html
+3       3       aboutUs.html
+3       3       aboutUs.html
+3       3       aboutUs.html
