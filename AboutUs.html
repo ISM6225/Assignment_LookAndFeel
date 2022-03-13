@@ -1,0 +1,202 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>Know Your Food</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/714e7707f1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_Container">
+            <a href="/" id="navbar_logo"><i class="fa-solid fa-burger"></i> Know Your Food</a>
+            <div class="navbar_toggle" id="mobile_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="food.html" class="navbar_links">
+                        Food
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">
+                        Recipies
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="Component.html" class="navbar_links">
+                        Components
+                    </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="AboutUs.html" class="navbar_links">
+                        About Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="AboutUs">
+
+            <div class="row" style="color:white;">
+                <h3 style="text-align: center; padding: 2rem; ">Know your Food provides nutrition data to empower you to create a better diet based on food components and ingredients. You can even look for calorie count and get the nutritional data based on recipies .The data is sourced from the <a href="https://fdc.nal.usda.gov/api-guide.html" Target="_blank">USDA Food Data Central.</a></h3>
+                <div class="column">
+                    <img class="AboutImage" src="img/surbhi.jpg" alt="no image" />
+                    <h3>Surbhi Sharma</h3>
+                    <p>Surbhi is a USF's Business Analytics and Information Systems graduate program student. She has worked for over four years as a Software Engineer. Her contributions include designing(Home AboutUs, Footer, and Navigation), making the website responsive, creating the data model and chart.</p>
+                    <p style="text-align:initial;"><a href="https://github.com/Surbhisharma08/Assignment_LookAndFeel" Target="_blank">Git</a></p>
+                </div>
+                <div class="column">
+                    <img class="AboutImage" src="" alt="no image" />
+                    <h3>Shabana Ajamal</h3>
+                    <p>Surbhi is a student at USF's Business Analytics and Information Systems graduate program. She has worked for over four years as a Software Engineer. Her contributions include designing(Home AboutUs, Footer, and Navigation), making the website responsive, and creating the data model.</p>
+                </div>
+                <div class="column">
+                    <img class="AboutImage" src="" alt="no image" />
+                    <h3>Sowmya Nanduri</h3>
+                    <p>Surbhi is a student at USF's Business Analytics and Information Systems graduate program. She has worked for over four years as a Software Engineer. Her contributions include designing(Home AboutUs, Footer, and Navigation), making the website responsive, and creating the data model.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h1 style="color:white;"> Nutrition Chart</h1>
+
+                    <p style="max-width: 600px; margin: auto;">
+                        <canvas id="barchart" width="800" height="600"></canvas>
+                    </p>
+                    <script>
+                        new Chart(document.getElementById("barchart"), {
+                            type: 'pie',
+                            data: {
+                                labels: ["Milk", "Meat", "Banana", "Donut", "Sugar"],
+                                datasets: [
+                                    {
+                                        label: "Calories",
+                                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                        data: [160, 267, 80, 784, 433]
+                                    },
+                                    {
+                                        label: ["calcium", "protein", "potassium", "Carbs", "Carbs"],
+                                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                        data: [160, 267, 80, 784, 433]
+                                    }
+                                ]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: 'Nutrition Facts'
+                                },
+                                scales: {
+                                    yAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Calories'
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+                <div class="column"></div>
+           
+            
+        </div>
+            <!--<div class="main_img_Container">-->
+            <!--<img src="img/HomeImage.jpg" alt="no image" id="main_img" />-->
+            <!--<div class="main_Content">
+        <h1>Know Your Food</h1>
+        <h2>Based on food items</h2>
+        <p>See what makes us diffrent</p>
+        <button class="main_btn">Get Started</button>
+    </div>-->
+            <!--</div>-->
+
+        </div>
+    </div>
+
+    <!--footer section-->
+    <div class="footer_Container">
+        <div class="footer_link">
+            <div class="footer_link_wrapper">
+                <div class="footer_link_items">
+                    <h2>About Us</h2>
+                    <a href="">How It Works</a>
+                    <a href="">Testimonials</a>
+                    <a href="">Carrers</a>
+                    <a href="">Terms of Service</a>
+                </div>
+                <div class="footer_link_items">
+                    <h2>Contact Us</h2>
+                    <a href="">Contact</a>
+                    <a href="">Destination</a>
+                    <a href="">Sponsorships</a>
+                    <a href="">Support</a>
+
+                </div>
+            </div>
+            <div class="footer_link_wrapper">
+                <div class="footer_link_items">
+                    <h2>Videos</h2>
+                    <a href="">Submit Videos</a>
+                    <a href="">Agency</a>
+                    <a href="">Influencer</a>
+                    <a href="">Ambassador</a>
+
+                </div>
+                <div class="footer_link_items">
+                    <h2>Social Media</h2>
+                    <a href="">Facebook</a>
+                    <a href="">Instagram</a>
+                    <a href="">Youtube</a>
+                    <a href="">Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="social_media">
+            <div class="social_media_wrap">
+                <div class="footer_logo">
+                    <a href="" id="footer_logo"><i class="fa-solid fa-burger"></i>Know Your Food</a>
+
+                </div>
+                <p class="website_right">@Know Your Food 2022. All Right Reserved</p>
+                <div class="social_icons">
+                    <a href="" class="social_icon_link" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" class="social_icon_link" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" class="social_icon_link" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="" class="social_icon_link" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="" class="social_icon_link" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
