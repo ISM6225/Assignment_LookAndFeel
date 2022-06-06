@@ -1,0 +1,38 @@
+﻿body {
+    background: url(../img/HH2.jpg) no-repeat center fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-blend-mode: darken;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+div {
+    margin
+}
+
+h1 {
+    color: darkgoldenrod;
+    text-align: Center;
+    font-size: 60px
+}
+
+h2 {
+    color: goldenrod;
+    text-align: Center;
+    font-size: 36px
+}
+
+p {
+    font-size: 30px;
+    color: white;
+    text-align: Center;
+}
+
+img {
+    border-radius: 50%;
+    vertical-align: middle;
+}
