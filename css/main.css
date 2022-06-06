@@ -7,10 +7,34 @@ html {
   height: 100%;
 }
 
+/* Top Navigation Bar*/
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    opacity: 1;
+}
+.topnav a{
+    float:left;
+    color:aliceblue;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size:17px;
+    opacity: 1;
+}
+.topnav a.active{
+    background-color:darkgoldenrod;
+    color:black;
+}
+
+
+
 /*Set background image*/
 .container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
+  background-image: url('beer.png');
   height: 100%;
+  opacity: .5;
   background-position: center;
   background-size: cover;
 }
@@ -27,7 +51,9 @@ html {
 
 /*Set circle in unordered list*/
 .middle ul {
-  list-style-type: circle;
+  list-style-type: none;
+  margin: 0;
+  padding:0
 }
 
 /*Set text inside li tag to left*/
@@ -37,7 +63,7 @@ html {
 
 /*Set text color for a tag inside middle class and ul>li element*/
 .middle ul li a {
-  color: beige;
+  color: blue;
 }
 
 /*Change text color and decoration for a tags inside middle class and ul>li element*/

@@ -1,0 +1,60 @@
+/* Top Navigation Bar*/
+body,
+html {
+    height: 100%;
+}
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    opacity: 1;
+}
+.topnav a{
+    float:left;
+    color:aliceblue;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size:17px;
+    opacity: 1;
+}
+.topnav a.active {
+        background-color: darkgoldenrod;
+        color: black;
+        opacity: 1;
+}
+
+/*Set background image*/
+/*Set height*/
+
+
+.BeerBackground {
+  background-image: url('beer.png');
+  height: 100%;
+  width:100%;
+  background-size: cover;
+ 
+}
+
+/*Box up the Header and Paragrap text on the left side*/
+.MyContent{
+    float:left;
+    width:25%;
+    height:100%;
+    border:black;
+    stop-opacity:;
+}
+.MyHeadings {
+    color: gold;
+    font:bold 20px arial;
+}
+.MyPara {
+    stop-opacity:;
+    color: ghostwhite;
+    font:bold 18px arial;
+    
+}
+
+.MySmallText{
+    color:cornflowerblue;
+    font:bold 12px arial;
+}
