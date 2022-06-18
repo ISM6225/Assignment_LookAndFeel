@@ -45,3 +45,70 @@ html {
   color: red;
   text-decoration: none;
 }
+
+
+.navbar {
+    background-color: darkolivegreen;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 8px 5px 8px 5px;
+
+}
+
+.navbar a {
+        text-decoration: none;
+        color: inherit;
+        text-align:center;
+     }
+
+.navbar a:hover {
+        color: red;
+        text-decoration: none;
+    }
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    text-align:center;
+    margin-left:30px;
+}
+
+.navbar a:active {
+    color: forestgreen;
+}
+
+body{
+    min-height:100vh;
+}
+
+.navbar-right{
+    position:absolute;
+    top: 35px;
+    right: 15px;
+    font-size:3.5em;
+    font-weight:400;
+}
+
+.navbarbottom {
+    background-color: darkolivegreen;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 8px 5px 8px 5px;
+    bottom: 0;
+    width:100%;
+    text-align:center;
+}
+.floatRight {
+    float: right;
+    margin-left: 20px
+}
+
+ul.a {
+    list-style-type: circle;
+}
