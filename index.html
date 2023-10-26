@@ -1,1 +1,86 @@
-<!--Your HTML code here-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Air Quality</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- Placeholder for Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome to NYC Air Quality</h1>
+            <p>Monitoring and analyzing air quality in New York City.</p>
+            <img src="path_to_hero_image.jpg" alt="NYC skyline with clear sky" class="hero-image">
+        </section>
+
+        <!-- Brief Introduction -->
+        <section class="intro">
+            <h2>About the Project</h2>
+            <p>The NYC Air Quality project is dedicated to providing real-time data and insights into the air quality of New York City. Our aim is to raise awareness and foster informed decisions for a healthier living environment.</p>
+        </section>
+
+        <!-- Data Highlights -->
+        <section class="data-highlights">
+            <h2>Data Highlights</h2>
+            <!-- Placeholder for key metrics or small charts -->
+            <div class="highlight">Average PM2.5: 12 μg/m³</div>
+            <div class="highlight">Ozone Levels: Moderate</div>
+            <!-- ... more highlights -->
+        </section>
+
+        <!-- Interactive Element -->
+        <section class="interactive-map">
+            <h2>Interactive Air Quality Map</h2>
+            <p>Explore air quality levels across different regions of NYC.</p>
+            <!-- Placeholder for interactive map or chart -->
+            <div class="map-placeholder">Map will be integrated here.</div>
+        </section>
+
+        <!-- Latest News or Updates -->
+        <section class="news-updates">
+            <h2>Latest Updates</h2>
+            <article class="news-item">
+                <h3>Improvement in Air Quality this Month</h3>
+                <p>Recent data indicates a significant drop in harmful pollutants in the air...</p>
+            </article>
+            <!-- ... more news articles -->
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Get Involved</h2>
+            <p>Learn more about our project, contribute data, or join our community initiatives.</p>
+            <a href="about.html" class="cta-button">Learn More</a>
+        </section>
+    </main>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to Load Common Components -->
+    <script>
+        // Function to load a component into a placeholder
+        function loadComponent(componentId, componentUrl) {
+            fetch(componentUrl)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(componentId).innerHTML = data;
+                });
+        }
+
+        // Load header and footer
+        loadComponent('header', 'header.html');
+        loadComponent('footer', 'footer.html');
+    </script>
+</body>
+
+</html>
