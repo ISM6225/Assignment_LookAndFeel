@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Model - NYC Air Quality Dashboard</title>
+    <script>
+        // Function to load header and footer
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("airquality-header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("#header").innerHTML = data;
+            });
+
+            fetch("airquality-footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("#footer").innerHTML = data;
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Placeholder for Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Data Model for NYC Air Quality Dashboard</h2>
+        
+        <p>
+            The data model behind the NYC Air Quality Dashboard is structured to provide a comprehensive and granular view of 
+            air quality metrics. This page provides an overview of the data model and its components.
+        </p>
+
+        <h3>Key Data Fields:</h3>
+        <ul>
+            <li><strong>Unique ID:</strong> An identifier for each data entry.</li>
+            <li><strong>Indicator ID:</strong> A reference ID for the air quality indicator.</li>
+            <li><strong>Name:</strong> Name of the air quality indicator (e.g., PM2.5, Ozone).</li>
+            <li><strong>Measure:</strong> The type of measure (e.g., concentration).</li>
+            <li><strong>Geo Type Name:</strong> The type of geographical region (e.g., city, county).</li>
+            <li><strong>Geo Join ID:</strong> An ID to join with geographical data.</li>
+            <li><strong>Geo Place Name:</strong> The name of the geographical location (e.g., New York City).</li>
+            <li><strong>Time Period:</strong> The time period for the data (e.g., 2023).</li>
+            <li><strong>Start Date:</strong> The starting date for the data entry.</li>
+            <li><strong>Data Value:</strong> The value of the air quality metric.</li>
+            <li><strong>Message:</strong> Any additional message or note related to the data.</li>
+        </ul>
+            <h4>Visual Representation</h4>
+            <p>Locations and AirQualityData have a one-to-many relationship. One location can have multiple air quality data entries, but each data entry is associated with only one location.
+               AirQualityIndicators and AirQualityData also have a one-to-many relationship. One indicator can be associated with multiple data entries, but each data entry corresponds to only one indicator.</p>
+            <p>Below is the Entity-Relationship Diagram (ERD) that illustrates the data model for our project:</p>
+            <img src="assets/DIS Image.png" alt="Data Model ERD" style="max-width: 25%;">
+
+        <p>
+            The data model is designed to be flexible and accommodating to various types of air quality data. By understanding 
+            the data model, users can more effectively interpret and analyze the data presented on the dashboard.
+        </p>
+        <a href="index.html">Back to Home</a>
+    </main>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer"></div>
+
+</body>
+
+</html>
