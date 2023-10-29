@@ -4,83 +4,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYC Air Quality</title>
+    <title>NYC Air Quality Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <script>
+        // Function to load header and footer
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("airquality-header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("#header").innerHTML = data;
+            });
+
+            fetch("airquality-footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("#footer").innerHTML = data;
+            });
+        });
+    </script>
+    <style>
+        /* Enhanced Visual Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f0f8ff;  /* AliceBlue for air quality theme */
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+        }
+
+        /* Hero Section Styles */
+        #hero {
+            background: linear-gradient(rgba(0,123,255,0.5), rgba(0,123,255,0.5)), url('path_to_hero_background.jpg') no-repeat center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            background-color: #fff;
+            color: #007bff;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #f7f7f7;
+        }
+
+        /* Blue-themed line-separated content sections */
+        h2 {
+            font-weight: 700;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .explore-btn {
+    background-color: #007bff;  /* Blue theme color */
+    color: #ffffff;  /* White text */
+    padding: 10px 25px;  /* Padding for a larger click area */
+    border-radius: 50px;  /* Pill shape */
+    font-weight: 600;  /* Bold text */
+    letter-spacing: 1.5px;  /* Some letter spacing */
+    transition: all 0.3s ease;  /* Smooth transition for all properties */
+    text-decoration: none;  /* Remove underline always */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    border: 2px solid transparent; /* Transparent border to keep button size consistent */
+}
+
+.explore-btn:hover {
+    background-color: #0056b3;  /* Slightly darker blue on hover */
+    color: #ffffff;  /* White text on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  /* A bit more pronounced shadow on hover */
+    border: 2px solid #007bff;  /* Blue border on hover */
+}
+
+.explore-btn:focus {
+    outline: none;  /* Remove the focus outline */
+    text-decoration: none;  /* Ensure no underline on focus */
+}
+
+
+.features-section {
+    padding: 40px 0;
+    background-color: #f0f8ff; /* Light blue background */
+    text-align: center;
+}
+
+.fact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows the fact cards to wrap to the next line on smaller screens */
+    margin-top: 40px;
+}
+
+.fact-card {
+    flex: 0 1 30%; /* This means the card will grow and shrink as needed, but its base size is 30% of the parent's width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 1%;  /* Gives a 1% margin all around the card for spacing */
+}
+
+.fact-card h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #007bff;  /* Blue theme color for emphasis */
+    border-bottom: 2px solid #e7e7e7;
+    padding-bottom: 10px;
+}
+
+
+
+
+        .did-you-know-section {
+    padding: 40px 0;
+    background-color: #f0f8ff; /* Light blue background */
+    text-align: center;
+}
+
+.fact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.fact-card {
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.fact-card h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #007bff; /* Blue theme color for emphasis */
+    border-bottom: 2px solid #e7e7e7;
+    padding-bottom: 10px;
+}
+
+    </style>
 </head>
 
 <body>
-    <!-- Placeholder for Header -->
+
     <div id="header"></div>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Welcome to NYC Air Quality</h1>
-            <p>Monitoring and analyzing air quality in New York City.</p>
-            <img src="path_to_hero_image.jpg" alt="NYC skyline with clear sky" class="hero-image">
+    <!-- Hero Section -->
+    <!-- Hero Section with Background Image -->
+<section id="hero" class="text-center" style="background-image: url('assets/newyork_image.png'); background-size: cover; background-position: center; padding: 100px 0;">
+    <div style="background-color: rgba(0, 0, 0, 0.5); padding: 20px 0;"> <!-- Optional dark overlay to make text more readable -->
+        <h1>Welcome to the NYC Air Quality Dashboard</h1>
+        <p>Your comprehensive source for air quality data in New York City.</p>
+        <a href="airquality-overview.html" class="explore-btn">Start Exploring Data</a>
+    </div>
+</section>
+
+
+    <main class="container my-5">
+        <!-- Mission & Vision -->
+        <section id="mission-vision" class="mb-5">
+            <h2 class="text-center">Our Mission & Vision</h2>
+            <p>At NYC Air Quality Dashboard, we are dedicated to providing comprehensive air quality data for New York City. Our vision is to create a healthier environment for all residents and visitors by raising awareness and promoting actions towards better air quality.</p>
         </section>
 
-        <!-- Brief Introduction -->
-        <section class="intro">
-            <h2>About the Project</h2>
-            <p>The NYC Air Quality project is dedicated to providing real-time data and insights into the air quality of New York City. Our aim is to raise awareness and foster informed decisions for a healthier living environment.</p>
-        </section>
+        <!-- Features of the Dashboard -->
+<section class="features-section">
+    <h2 class="text-center">Features of the Dashboard</h2>
+    
+    <div class="fact-container">
+        <!-- Historical Data Card -->
+        <div class="fact-card">
+            <h3>Historical Data</h3>
+            <p>Delve deep into the past and see how air quality has changed over the years in NYC.</p>
+        </div>
 
-        <!-- Data Highlights -->
-        <section class="data-highlights">
-            <h2>Data Highlights</h2>
-            <!-- Placeholder for key metrics or small charts -->
-            <div class="highlight">Average PM2.5: 12 μg/m³</div>
-            <div class="highlight">Ozone Levels: Moderate</div>
-            <!-- ... more highlights -->
-        </section>
+        <!-- Health Insights Card -->
+        <div class="fact-card">
+            <h3>Health Insights</h3>
+            <p>Understand the impact of different air quality indicators on human health.</p>
+        </div>
 
-        <!-- Interactive Element -->
-        <section class="interactive-map">
-            <h2>Interactive Air Quality Map</h2>
-            <p>Explore air quality levels across different regions of NYC.</p>
-            <!-- Placeholder for interactive map or chart -->
-            <div class="map-placeholder">Map will be integrated here.</div>
-        </section>
+        <!-- Recent Data Card -->
+        <div class="fact-card">
+            <h3>Recent Data</h3>
+            <p>Stay updated with the latest air quality data from across New York City.</p>
+        </div>
+    </div>
+</section>
 
-        <!-- Latest News or Updates -->
-        <section class="news-updates">
-            <h2>Latest Updates</h2>
-            <article class="news-item">
-                <h3>Improvement in Air Quality this Month</h3>
-                <p>Recent data indicates a significant drop in harmful pollutants in the air...</p>
-            </article>
-            <!-- ... more news articles -->
-        </section>
 
-        <!-- Call to Action -->
-        <section class="cta">
-            <h2>Get Involved</h2>
-            <p>Learn more about our project, contribute data, or join our community initiatives.</p>
-            <a href="about.html" class="cta-button">Learn More</a>
+
+        <!-- Did You Know? Section -->
+<section class="did-you-know-section">
+    <h2 class="text-center">Did You Know?</h2>
+    
+    <div class="fact-container">
+        <!-- Fact 1 -->
+        <div class="fact-card">
+            <h3>Air Pollution's Global Impact</h3>
+            <p>Air pollution causes about 1 in 8 deaths worldwide, making it the world's most significant environmental health risk.</p>
+        </div>
+        
+        <!-- Fact 2 -->
+        <div class="fact-card">
+            <h3>The Indoor Air Quality Paradox</h3>
+            <p>Indoor air can be 2-5 times more polluted than outdoor air, yet we spend nearly 90% of our time indoors.</p>
+        </div>
+
+        <!-- Fact 3 -->
+        <div class="fact-card">
+            <h3>Nature's Air Purifiers</h3>
+            <p>Plants can act as natural air purifiers, with some species known to remove up to 87% of air toxins in 24 hours.</p>
+        </div>
+    </div>
+</section>
+
+
+        <!-- FAQ -->
+        <section id="faq" class="mb-5">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <p><strong>Q: How often is the data updated?</strong><br>A: We strive for real-time updates, but we depend on our data providers. The last update was one year ago.</p>
+            <p><strong>Q: Can I access historical data?</strong><br>A: Yes, our platform provides access to historical air quality data for up to 10 years.</p>
         </section>
     </main>
 
-    <!-- Placeholder for Footer -->
     <div id="footer"></div>
 
-    <!-- JavaScript to Load Common Components -->
-    <script>
-        // Function to load a component into a placeholder
-        function loadComponent(componentId, componentUrl) {
-            fetch(componentUrl)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById(componentId).innerHTML = data;
-                });
-        }
-
-        // Load header and footer
-        loadComponent('header', 'header.html');
-        loadComponent('footer', 'footer.html');
-    </script>
+    <!-- Optional Bootstrap JS and FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
