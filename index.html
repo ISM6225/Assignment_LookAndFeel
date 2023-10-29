@@ -85,82 +85,73 @@
             font-size: 14px;
         }
 
-        #hero {
-    position: relative;
-    height: auto;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0; /* Add padding above and below the title */
-}
+    /* Updated Hero Styles */
+    body #hero {
+        position: relative;
+        height: auto;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
 
-#hero .hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
+    body #hero .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
 
-#hero .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay */
-    z-index: 0;
-}
+    body #hero .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
 
-#hero .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    z-index: 1;
-}
+    body #hero .hero-content {
+        z-index: 1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-#hero h1 {
-    font-size: 36px;
-    margin: 0; /* Remove margin to center vertically */
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: block; /* Change to block-level element */
-    font-family: 'Open Sans', sans-serif;
-    text-align: center; /* Center text horizontally */
-}
+    body #hero h1 {
+        font-size: 36px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-bottom: 10px; /* Spacing between title and paragraph */
+    }
 
+    body #hero p {
+        font-size: 18px;
+        margin-bottom: 10px; /* Spacing between paragraph and button */
+    }
 
-#hero p {
-    font-size: 18px;
-    margin-top: 10px;
-    color: white;
-}
+    body #hero .cta-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+    }
 
+    body #hero .cta-button:hover {
+        background-color: #0056b3;
+    }
 
-#hero .cta-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 12px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
-}
-
-#hero .cta-button:hover {
-    background-color: #0056b3; /* Hover background color */
-}
 
 /* Add some space between sections */
 section {
