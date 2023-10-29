@@ -9,6 +9,6 @@ function loadComponent(componentId, componentUrl) {
 
 // Load header and footer on page load
 window.onload = function() {
-    loadComponent('header', 'airquality-header.html');
-    loadComponent('footer', 'airquality-footer.html');
+    loadComponent('header-placeholder', 'airquality-header.html');
+    loadComponent('footer-placeholder', 'airquality-footer.html');
 };
