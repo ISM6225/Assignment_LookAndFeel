@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Edit Air Quality Data - NYC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn.save {
+            background-color: #28a745;
+            color: #ffffff;
+        }
+
+        .btn.cancel {
+            background-color: #dc3545;
+            color: #ffffff;
+        }
+
+        a.back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a.back-link:hover {
+            color: #0056b3;
+        }
+    </style>
+    <script>
+        // Script to load header and footer
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("airquality-header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("#header").innerHTML = data;
+            });
+
+            fetch("airquality-footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("#footer").innerHTML = data;
+            });
+        });
+
+        function saveData() {
+            alert('Data saved successfully!');
+            window.location.href = 'airquality-details.html';
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Placeholder for Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Add/Edit Air Quality Data</h2>
+
+        <form onsubmit="event.preventDefault(); saveData();">
+            <div class="form-group">
+                <label for="timePeriod">Time Period:</label>
+                <input type="text" id="timePeriod" placeholder="E.g., 2023">
+            </div>
+
+            <div class="form-group">
+                <label for="dataValue">Data Value:</label>
+                <input type="number" id="dataValue" placeholder="E.g., 45">
+            </div>
+
+            <div class="form-group">
+                <label for="measure">Measure:</label>
+                <select id="measure">
+                    <option value="o3">O3 concentration</option>
+                    <option value="pm2.5">PM2.5 concentration</option>
+                    <!-- Add more measures as needed -->
+                </select>
+            </div>
+
+            <button class="btn save">Save</button>
+            <a href="airquality-details.html" class="btn cancel">Cancel</a>
+        </form>
+
+        <a href="airquality-details.html" class="back-link">Back to Air Quality Details</a>
+    </main>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>
