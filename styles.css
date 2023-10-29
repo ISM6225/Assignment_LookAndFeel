@@ -1,1 +1,219 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f8ff;  /* AliceBlue for air quality theme */
+    line-height: 1.6;
+}
+
+/* CSS Variables for Theme */
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --highlight-color: #007bff;
+    --background-color: #f4f4f4;
+    --text-color: var(--primary-color);
+    --link-color: var(--highlight-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+nav a {
+    margin-left: 1rem;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 5%;
+}
+
+/* Banner Image */
+#banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Data Highlights */
+#data-highlights .metric {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Testimonials */
+#testimonials blockquote {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-left: 5px solid #007bff;
+}
+
+/* Call to Action */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    header, footer, main {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjustments for tablet sizes */
+    /* For instance, you might want to adjust font sizes or padding here */
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Adjustments for larger screens */
+    /* For instance, you might adjust the maximum width of the main content */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* Hero Section Styles */
+#hero {
+    background: linear-gradient(rgba(0,123,255,0.5), rgba(0,123,255,0.5)), url('path_to_hero_background.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Blue-themed line-separated content sections */
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    background-color: #007bff;  /* Blue theme color */
+    color: #ffffff;  /* White text */
+    padding: 10px 25px;  /* Padding for a larger click area */
+    border-radius: 50px;  /* Pill shape */
+    font-weight: 600;  /* Bold text */
+    letter-spacing: 1.5px;  /* Some letter spacing */
+    transition: all 0.3s ease;  /* Smooth transition for all properties */
+    text-decoration: none;  /* Remove underline always */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    border: 2px solid transparent; /* Transparent border to keep button size consistent */
+}
+
+.explore-btn:hover {
+    background-color: #0056b3;  /* Slightly darker blue on hover */
+    color: #ffffff;  /* White text on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  /* A bit more pronounced shadow on hover */
+    border: 2px solid #007bff;  /* Blue border on hover */
+}
+
+.explore-btn:focus {
+    outline: none;  /* Remove the focus outline */
+}
+
+.features-section {
+    padding: 40px 0;
+    background-color: #f0f8ff; /* Light blue background */
+    text-align: center;
+}
+
+.fact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.fact-card {
+    flex: 0 1 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 1%;
+}
+
+.fact-card h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #007bff;  /* Blue theme color for emphasis */
+    border-bottom: 2px solid #e7e7e7;
+    padding-bottom: 10px;
+}
+
+.did-you-know-section {
+    padding: 40px 0;
+    background-color: #f0f8ff; /* Light blue background */
+    text-align: center;
+}
+
+.fact-card {
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+}
+
+.fact-card h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue theme color for emphasis */
+    border-bottom: 2px solid #e7e7e7;
+    padding-bottom: 10px;
+}
