@@ -184,6 +184,20 @@ section {
 
     </style>
     <script src="scripts.js" defer></script>
+    <script>
+        // Function to load a component into a placeholder
+        function loadComponent(componentId, componentUrl) {
+            fetch(componentUrl)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(componentId).innerHTML = data;
+                });
+        }
+
+        // Load header and footer
+        loadComponent('header-placeholder', 'airquality-header.html');
+        loadComponent('footer-placeholder', 'airquality-footer.html');
+    </script>
 </head>
 
 <body>
@@ -192,6 +206,8 @@ section {
 <!-- Hero Section -->
 <!-- Hero Section -->
 <!-- Hero Section -->
+<!-- Placeholder for Header -->
+<div id="header-placeholder"></div>
 <section id="hero">
     <div class="hero-overlay"></div>
     <img src="assets/newyork_image.png" alt="NYC skyline with clear sky" class="hero-image">
@@ -257,6 +273,8 @@ section {
                 <p>A: Yes, our platform provides access to historical air quality data for up to 10 years.</p>
             </div>
         </section>
+        <!-- Placeholder for Footer -->
+<div id="footer-placeholder"></div>
     </main>
 
     <!-- Placeholder for Footer -->
