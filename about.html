@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,11 +16,12 @@
 
         main {
             padding: 20px;
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin: 20px auto;
             width: 80%;
             max-width: 1200px;
+            border-radius: 10px;
         }
 
         h2 {
@@ -33,29 +34,70 @@
         .about-text {
             font-size: 16px;
             line-height: 1.6;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .info {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h4 {
+            color: #007bff;
+            border-bottom: 1px solid #e7e7e7;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .image {
-            width: 200px; 
-            height: 200px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            float: left;
+        }
+
+        .but {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .but:hover {
+            background-color: #0056b3;
+        }
+
+        .person {
+            overflow: auto;
+            margin-bottom: 20px;
         }
     </style>
-    </style>
+
     <script>
         // Script to load header and footer
         document.addEventListener("DOMContentLoaded", function() {
             fetch("airquality-header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.querySelector("#header").innerHTML = data;
-            });
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector("#header").innerHTML = data;
+                });
 
             fetch("airquality-footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.querySelector("#footer").innerHTML = data;
-            });
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector("#footer").innerHTML = data;
+                });
         });
     </script>
 </head>
@@ -67,34 +109,38 @@
     <!-- Main Content -->
     <main>
         <h2>About Us</h2>
-
         <div class="about-text">
             <p>
-                NYC Air Quality Dashboard was established with a singular vision: to provide comprehensive, real-time air quality data for New York City.
-                Air quality plays a pivotal role in our overall well-being. Polluted air can lead to a range of health issues, from minor irritations like coughing and shortness of breath to more severe conditions like asthma, heart disease, and even stroke. Especially in a bustling city like New York, where millions of people live and work, understanding the air we breathe becomes crucial.
+                Hailing from the University of South Florida, we are a team of dedicated graduate students from the Masters in Business Analytics and Information Systems program. The NYC Air Quality Dashboard is a testament to our passion for leveraging technology to drive meaningful change. This platform was born out of our final project for the Distributed Information Systems course, but it represents much more than just an academic endeavor. We recognized the pressing need for accessible, real-time air quality data, especially in a dynamic environment like New York City.
             </p>
 
             <p>
-                The team behind this project:
+                Our goal is to transform complex data into actionable insights, empowering residents and visitors of New York to make informed decisions about their health and well-being. In a world where data drives decisions, we are proud to provide a platform that bridges the gap between intricate datasets and the people who need them most.
             </p>
+
+            <p>
+                Dive in to learn more about the individuals who poured their expertise and enthusiasm into this project:
+            </p>
+
         </div>
 
         <!-- Team Members -->
         <div class="info">
             <h4>Bhanu Prakash Konda</h4>
-            <p>
-                I'm Bhanu Prakash Reddy Konda, a tech enthusiast with a background in Computer Science. With prior experience as a Java Developer at Tata Consultancy Services, I've combined my skills and passion to create this platform. Here, I'm dedicated to providing accessible and reliable air quality data.
-                My contributions include meticulous dataset selection, web development, and ensuring seamless data integration, all aimed at making air quality information readily available for your benefit.
-                has context menu.
-            </p>
-                <div class="person">
-                    <img src="bhanu.jpg" class="image">
-                    <a href="https://www.linkedin.com/in/kbp753/"target="_blank"><button class="but">LinkedIn</button></a>
-                </div>
+            <div class="person">
+                <img src="assets/bhanu.jpeg" class="image">
+                <p>
+                    I'm Bhanu Prakash Reddy Konda, a tech enthusiast with a background in Computer Science. With prior experience as a Java Developer at Tata Consultancy Services, I've combined my skills and passion to create this platform. Here, I'm dedicated to providing accessible and reliable air quality data. My contributions include meticulous dataset selection, web development, and ensuring seamless data integration, all aimed at making air quality information readily available for your benefit.
+                </p>
+                <a href="https://www.linkedin.com/in/kbp753/" target="_blank">
+                    <button class="but">LinkedIn</button>
+                </a>
+            </div>
         </div>
 
+        
 
-       
+
 
     </main>
 
