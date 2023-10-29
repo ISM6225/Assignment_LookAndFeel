@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - NYC Air Quality</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .image {
+            width: 200px; 
+            height: 200px;
+        }
+    </style>
+    </style>
+    <script>
+        // Script to load header and footer
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("airquality-header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("#header").innerHTML = data;
+            });
+
+            fetch("airquality-footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("#footer").innerHTML = data;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Placeholder for Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main>
+        <h2>About Us</h2>
+
+        <div class="about-text">
+            <p>
+                NYC Air Quality Dashboard was established with a singular vision: to provide comprehensive, real-time air quality data for New York City.
+                Air quality plays a pivotal role in our overall well-being. Polluted air can lead to a range of health issues, from minor irritations like coughing and shortness of breath to more severe conditions like asthma, heart disease, and even stroke. Especially in a bustling city like New York, where millions of people live and work, understanding the air we breathe becomes crucial.
+            </p>
+
+            <p>
+                The team behind this project:
+            </p>
+        </div>
+
+        <!-- Team Members -->
+        <div class="info">
+            <h4>Bhanu Prakash Konda</h4>
+            <p>
+                I'm Bhanu Prakash Reddy Konda, a tech enthusiast with a background in Computer Science. With prior experience as a Java Developer at Tata Consultancy Services, I've combined my skills and passion to create this platform. Here, I'm dedicated to providing accessible and reliable air quality data.
+                My contributions include meticulous dataset selection, web development, and ensuring seamless data integration, all aimed at making air quality information readily available for your benefit.
+                has context menu.
+            </p>
+                <div class="person">
+                    <img src="bhanu.jpg" class="image">
+                    <a href="https://www.linkedin.com/in/kbp753/"target="_blank"><button class="but">LinkedIn</button></a>
+                </div>
+        </div>
+
+
+        <div class="info">
+            <h4>Lakshmi Preetham Gupta</h4>
+            <p>
+                Greetings, I am Preetam, a graduate student actively pursuing a Master's degree in Business Analytics and Information Systems. I worked as a Business Analyst for 1.5 years in India. For this project, I contributed in making the webpage responsive by performing CRUD operations and adding the add/edit buttons to the webpage.
+            </p>
+            <div class="person">
+                <img src="preetham.jpg" class="image">
+                <a href="https://www.linkedin.com/in/preetham-gupta-253a39183"target="_blank"><button class="but">LinkedIn</button></a>
+            </div>
+        </div>
+        
+
+        <div class="info">
+            <h4>Manoj Kumar Singam</h4>
+            <p>
+                Role:Developer -
+            </p>
+            <div class="person">
+                    <img src=".jpg" class="image">
+                    <a href=""><button class="but">LinkedIn</button></a>
+             </div>
+        </div>
+
+
+        <div class="info">
+            <h4>Sravani Dondapati</h4>
+            <p>
+                I'm Sravani, pursiung Master's in Business Analytics and Information Systems at University of South Florida.My expertise lies in web development, and I've been deeply involved in creating various web pages that make up this platform. From designing layouts to ensuring seamless navigation, I've worked to create an engaging and user-friendly online experience for our visitors.
+
+                In addition to web development, I've taken on the task of sourcing and selecting the datasets used on this website.
+            </p>
+            <div class="person">
+                <img src="sravs.jpg" class="image">
+                <a href="https://www.linkedin.com/in/sravani-dondapati-08b5031b9/" target="_blank">
+                <button class="but">LinkedIn</button></a>
+            </div>
+        </div>
+
+         <div class="info">
+                <h4>Vandana Sirpa</h4>
+                <p>
+                    I'm Vandana Sirpa, a graduate student actively pursuing a Master's degree in Business Analytics and Information Systems. I worked as a Full Stack Developer at Capgemini. My contribution to the project in designing the database model to store the data and also helped in designing the webpage.
+                </p>
+            
+                <div class="person">
+                    <img src="vandana.jpg" class="image">
+                   
+                    <a href="https://www.linkedin.com/in/sirpa-vandana-a2059117b" target="_blank">
+                        <button class="but">LinkedIn</button>
+                    </a>
+                </div>
+            </div>
+
+    </main>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>
