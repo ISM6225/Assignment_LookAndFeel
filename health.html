@@ -4,64 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Impact of Air Quality | NYC</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <title>Health Impact - NYC Air Quality Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #333; /* Adjusted to match your homepage style */
+            border-bottom: 2px solid #007bff; /* Blue border to match the theme */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px; /* Making the text slightly larger for readability */
+            margin-bottom: 20px; /* More space between paragraphs */
+            line-height: 1.6; /* Improved line-height for readability */
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            border-bottom: 1px solid #007bff;
+            padding-bottom: 2px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+    </style>
+    <script>
+        // Function to load header and footer
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("airquality-header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("#header").innerHTML = data;
+            });
+
+            fetch("airquality-footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("#footer").innerHTML = data;
+            });
+        });
+    </script>
 </head>
 
 <body>
+
     <!-- Placeholder for Header -->
     <div id="header"></div>
 
     <!-- Main Content -->
-    <main>
-        <!-- Introduction about Health Impact of Air Quality -->
-        <section>
-            <h2>Health Impact of Air Quality</h2>
-            <p>Poor air quality can lead to a myriad of health issues ranging from respiratory ailments to cardiovascular problems. This section delves into the health impacts associated with various pollutants and provides resources for further reading.</p>
-        </section>
-
-        <!-- Health Impact Details (Placeholder for now) -->
-        <section>
-            <h3>Impact of PM2.5</h3>
-            <p>PM2.5 refers to particulate matter that's less than 2.5 micrometers in diameter. Extended exposure can lead to chronic respiratory and cardiovascular problems.</p>
-            
-            <h3>Impact of Ozone</h3>
-            <p>Ozone, a major component of smog, can trigger asthma and reduce lung function even in healthy individuals.</p>
-            
-            <!-- More pollutants and their impacts can be added here -->
-        </section>
-        
-        <!-- Resources (Placeholder for now) -->
-        <section>
-            <h2>Resources</h2>
-            <p>For those interested in a deeper dive, we've curated a list of resources and studies detailing the health impacts of various pollutants.</p>
-            <ul>
-                <li><a href="#">Study on PM2.5 and Respiratory Diseases</a></li>
-                <li><a href="#">Impact of NO2 on Cardiovascular Health</a></li>
-                <!-- More resources can be added here -->
-            </ul>
-        </section>
-    </main>
+   
 
     <!-- Placeholder for Footer -->
     <div id="footer"></div>
 
-    <!-- JavaScript to Load Common Components -->
-    <script>
-        // Function to load a component into a placeholder
-        function loadComponent(componentId, componentUrl) {
-            fetch(componentUrl)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById(componentId).innerHTML = data;
-                });
-        }
-
-        // Load header and footer
-        loadComponent('header', 'header.html');
-        loadComponent('footer', 'footer.html');
-    </script>
 </body>
 
 </html>
