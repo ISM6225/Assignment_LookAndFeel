@@ -8,34 +8,36 @@
     <title>Footer Component</title>
     <style>
         /* Footer Styles */
-        .footer-container {
+        footer .footer-container {
             padding: 20px 5%;
             background-color: #003366;  /* Darker blue background */
             color: #e9ecef;  /* Light gray text */
             text-align: center;
         }
 
-        .footer-text {
+        footer .footer-text {
+            color: #e9ecef;
             margin: 10px 0;
             font-size: 14px;
         }
 
-        .footer-link {
-            color: #80bfff;  /* Brighter blue link color */
-            text-decoration: none;  /* No underline */
+        footer .footer-container p.footer-text a.footer-link {
+            color: #80bfff !important;  /* Brighter blue link color with !important */
+            text-decoration: none !important;  /* No underline with !important */
             margin: 0 10px;
             transition: background-color 0.3s, color 0.3s;
             border-radius: 5px;
             padding: 2px 5px;
             font-weight: bold;  /* Bold for emphasis */
+            border-bottom: none !important;  /* No border at the bottom */
         }
 
-        .footer-link:hover {
-            color: #003366;  /* Dark blue text on hover */
-            background-color: #e9ecef;  /* Light gray background on hover */
+        footer .footer-container p.footer-text a.footer-link:hover {
+            color: #003366 !important;  /* Dark blue text on hover */
+            background-color: #e9ecef !important;  /* Light gray background on hover */
         }
 
-        .footer-icon {
+        footer .footer-icon {
             margin-right: 5px;
         }
     </style>
@@ -45,7 +47,6 @@
         <div class="footer-container">
             <p class="footer-text"><i class="fas fa-copyright footer-icon"></i> 2023 NYC Air Quality Dashboard</p>
             <p class="footer-text"><i class="fas fa-database footer-icon"></i> Data sourced from<a href="https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r" class="footer-link" target="_blank" rel="noopener noreferrer">City of New York Environmental Data</a></p>
-
         </div>
     </footer>
 </body>
