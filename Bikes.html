@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en" xml:lang="en">
+  <head>
+    <title>URBAN BIKE WORKS</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="Index.html">
+          <h1 class="logo-label white-font">URBAN BIKE WORKS</h1>
+        </a>
+        <ul>
+          <li>
+            <a href="Index.html" class="white-font"><b>HOME</b></a>
+          </li>
+          <li>
+            <a href="Services.Html" class="white-font"><b>SERVICES</b></a>
+          </li>
+          <li>
+            <a href="Dashboard.html" class="white-font"><b>DASHBOARD</b></a>
+          </li>
+          <li>
+            <a href="Bikes.Html" class="white-font"><b>BIKES</b></a>
+          </li>
+          <li>
+            <a href="Aboutus.html" class="white-font"><b>ABOUT US</b></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content that should be edited -->
+    <main>
+      <h2 style="text-align: center">Bike Models</h2>
+      <div class="container">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Company</th>
+            <th>Model</th>
+            <th>Type</th>
+            <th>View SO's</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Honda</td>
+            <td>Activa</td>
+            <td>Sport</td>
+            <td>
+              <button onclick="viewSOs()" class="btnclr">View SO's</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Honda</td>
+            <td>Activa</td>
+            <td>Sport</td>
+            <td>
+              <button onclick="viewSOs()" class="btnclr">View SO's</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Honda</td>
+            <td>Activa</td>
+            <td>Sport</td>
+            <td>
+              <button onclick="viewSOs()" class="btnclr">View SO's</button>
+            </td>
+          </tr>
+          <tr class="no-hover">
+            <td><a class="search-btn btnclr" href="Form.html">ADD DATA</a></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
+<script>
+  function viewSOs() {
+    window.location.href = "./AllSOs.html";
+  }
+</script>
