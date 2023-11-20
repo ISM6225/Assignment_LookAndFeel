@@ -20,13 +20,7 @@ const Home = () => {
             <Col xs={12} md={6} lg={6}>
               <div className="overview-desc">
                 <h3>Let's Save The World</h3>
-                <p>
-                  COVID-19 is a highly contagious respiratory disease caused by
-                  the SARS-CoV-2 virus. It can spread through respiratory
-                  droplets produced when an infected person coughs, sneezes, or
-                  talks. The virus can also spread by touching a contaminated
-                  surface and then touching your eyes, nose, or mouth.
-                </p>
+               
                 <p>
                   COVID-19 is a highly contagious respiratory disease caused by
                   the SARS-CoV-2 virus. It can spread through respiratory
